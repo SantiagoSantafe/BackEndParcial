@@ -2,7 +2,6 @@ package Componentes;
 
 
 import com.fasterxml.jackson.annotation.JsonProperty;
-import lombok.AllArgsConstructor;
 import lombok.Getter;
 import lombok.RequiredArgsConstructor;
 import lombok.Setter;
@@ -30,5 +29,5 @@ public class Supervisor {
 
     @JsonProperty("telefonoSupervisor")
     @NotNull(message = "El telefono del supervisor no puede ser nulo")
-    protected Integer telefonoSupervisor;
+    protected String telefonoSupervisor;
 }
