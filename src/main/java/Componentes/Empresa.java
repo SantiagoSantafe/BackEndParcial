@@ -1,6 +1,9 @@
 package Componentes;
 import lombok.*;
 import javax.validation.constraints.NotEmpty;
+import com.fasterxml.jackson.databind.annotation.JsonSerialize;
+
+@JsonSerialize
 @Getter
 @Setter
 @AllArgsConstructor
