@@ -16,18 +16,15 @@ import lombok.*;
 @NoArgsConstructor
 public class Practicas {
     @JsonProperty("empresa")
-    @NotEmpty(message = "Ingrese todos los valores para la empresa")
-    @NotNull(message = "No esta el campoo")
+    @NotNull(message = "No esta el campo")
     protected Empresa empresa;
 
     @JsonProperty("supervisor")
-    @NotEmpty(message = "Ingrese todos los valores para supervisor")
-    @NotNull(message = "No esta el campoo")
+    @NotNull(message = "No esta el campo")
     protected Supervisor supervisor;
 
     @JsonProperty("tarea")
-    @NotEmpty(message = "Ingrese todos los valores para supervisor")
-    @NotNull(message = "No esta el campoo")
+    @NotNull(message = "No esta el campo")
     protected Tarea tarea;
 
 }
