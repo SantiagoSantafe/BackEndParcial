@@ -3,6 +3,8 @@ package co.edu.unisabana.BackEndParcial;
 
 import org.springframework.web.bind.annotation.*;
 
+import Componentes.Respuesta;
+
 import java.util.ArrayList;
 import java.util.List;
 
@@ -18,13 +20,13 @@ public class PracticasController {
     }
 
     @PostMapping (path = "/practicas/agregar")
-    public String agregarPractica(@RequestBody @Valid Practicas nuevaPractica){
+    public Respuesta agregarPractica(@RequestBody @Valid Practicas nuevaPractica){
         listaPracticas.add(nuevaPractica);
-        return "Creado exitosamente";
+        return new Respuesta("Creado exitosamente") ;
     }
     @DeleteMapping(path = "/practica/eliminar/{practica}")
-    public String eliminarPractica(@PathVariable Practicas practica){
+    public Respuesta eliminarPractica(@PathVariable Practicas practica){
         listaPracticas.remove(practica);
-        return "Removido exitosamente";
+        return new Respuesta("Removido exitosamente") ;
     }
 }

@@ -1,7 +1,8 @@
 package Componentes;
+
 import lombok.*;
 import javax.validation.constraints.NotEmpty;
-import javax.validation.constraints.NotNull;
+import javax.validation.constraints.Size;
 import com.fasterxml.jackson.databind.annotation.JsonSerialize;
 
 @JsonSerialize
@@ -10,15 +11,24 @@ import com.fasterxml.jackson.databind.annotation.JsonSerialize;
 @RequiredArgsConstructor
 public class Empresa {
     // Datos Empresa
-    @NotEmpty
+
+    @Size(min = 3, message = "El nombre de la empresa debe tener al menos 3 caracteres")
+    @NotEmpty(message = "El nombre de la empresa no puede estar vacío")
     protected String nombreEmpresa;
-    @NotEmpty
+
+    @Size(min = 3, message = "El sitio web de la empresa debe tener al menos 3 caracteres")
+    @NotEmpty(message = "El sitio web de la empresa no puede estar vacío")
     protected String sitioWebEmpresa;
-    @NotEmpty
+
+    @Size(min = 3, message = "La dirección de la empresa debe tener al menos 3 caracteres")
+    @NotEmpty(message = "La dirección de la empresa no puede estar vacía")
     protected String direccionEmpresa;
 
-    @NotNull
-    protected Integer numeroTelefonoEmpresa;
-    @NotEmpty
+    @Size(min = 3, message = "El número de teléfono de la empresa debe tener al menos 3 caracteres")
+    @NotEmpty(message = "El número de teléfono de la empresa no puede estar vacío")
+    protected String numeroTelefonoEmpresa;
+
+    @Size(min = 3, message = "La descripción de la empresa debe tener al menos 3 caracteres")
+    @NotEmpty(message = "La descripción de la empresa no puede estar vacía")
     protected String descripcionEmpresa;
 }
