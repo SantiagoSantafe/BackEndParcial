@@ -7,7 +7,7 @@ import com.fasterxml.jackson.databind.annotation.JsonSerialize;
 @JsonSerialize
 @Getter
 @Setter
-@AllArgsConstructor
+@RequiredArgsConstructor
 public class Tarea {
     @NotEmpty
     protected String descripcionTarea;
