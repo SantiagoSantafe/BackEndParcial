@@ -28,7 +28,7 @@ public class Empresa {
     @NotEmpty(message = "El número de teléfono de la empresa no puede estar vacío")
     protected String numeroTelefonoEmpresa;
 
-    @Size(min = 3, message = "La descripción de la empresa debe tener al menos 3 caracteres")
-    @NotEmpty(message = "La descripción de la empresa no puede estar vacía")
-    protected String descripcionEmpresa;
+    @Size(min = 3, message = "El email debe tener al menos 3 caracteres")
+    @NotEmpty(message = "Se necesita el email de la empresa")
+    protected String emailEmpresa;
 }
