@@ -21,12 +21,17 @@ public class PracticasController {
 
     @PostMapping (path = "/practicas/agregar")
     public Respuesta agregarPractica(@RequestBody @Valid Practicas nuevaPractica){
+        nuevaPractica.setId(listaPracticas.size());
         listaPracticas.add(nuevaPractica);
         return new Respuesta("Creado exitosamente") ;
     }
-    @DeleteMapping(path = "/practica/eliminar/{practica}")
-    public Respuesta eliminarPractica(@PathVariable Practicas practica){
-        listaPracticas.remove(practica);
+    @DeleteMapping(path = "/practica/eliminar/{id}")
+    public Respuesta eliminarPractica(@PathVariable int id){
+        for (Practicas practica: listaPracticas){
+            if (practica.getId()==id){
+                listaPracticas.remove(practica);
+            }
+        }
         return new Respuesta("Removido exitosamente") ;
     }
 }
