@@ -28,7 +28,7 @@ El proyecto tiene como finalidad proporcionar una herramienta sencilla y eficien
   - Horas dedicadas a la tarea.
   
  ## Tecnologías usadas 🛸
- 1. [REACT🔗](https://es.react.dev)
+ 1. [JAVA🔗](https://blog.hubspot.es/website/que-es-java)
  2. [KOTLIN🔗](https://gradle.org/kotlin/)
 
  ## INSTRUCCIONES DE USO 🧩
