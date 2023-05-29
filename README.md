@@ -29,9 +29,8 @@ El proyecto tiene como finalidad proporcionar una herramienta sencilla y eficien
   
  ## Tecnologías usadas 🛸
  1. [REACT🔗](https://es.react.dev)
- 2. [JAVA🔗](https://g.co/kgs/sNY3CU)
- 3. [HTML🔗](https://developer.mozilla.org/es/docs/Web/HTML)
- 
+ 2. [KOTLIN🔗](https://gradle.org/kotlin/)
+
  ## INSTRUCCIONES DE USO 🧩
  - BACK-END: 
   - Para hacer funcionamiento del back de este proyecto debe realizar el siguiente paso: Una vez abierto el repositorio en su editor, dirigirse al archivo llamado              "BackEndParcialApplication.java" y darle start, una vez inicializado todo funcionará perfectamente.
